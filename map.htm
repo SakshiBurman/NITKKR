@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="MAP.CSS">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Departments</title>
+</head>
+
+<body>
+
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="l.jpg" alt="logo"></a>
+            <div class="navlink" id="Navlinks">
+                <i class="fa fa-window-close" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <div class="dropdown">
+                        <li><a href="deparment.htm">DEPARTMENTS</a></li>
+
+                        <div class="dropdown-content">
+                            <a href="deparment.htm#ce"> Computer Eng </a>
+                            <a href="deparment.htm#cv">Civil Eng </a>
+                            <a href="deparment.htm#me">Mechanical Eng </a>
+                            <a href="deparment.htm#ee">Electrical Eng </a>
+                            <a href="deparment.htm#ec">Electronics and Communication Eng </a>
+                            <a href="deparment.htm#ba"> Business Adminstration</a>
+                            <a href="deparment.htm#ca">Computer Application</a>
+
+                        </div>
+                    </div>
+
+                    <li><a href="map.htm">LOCATION</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text">
+            <h1 class="back">NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA</h1>
+
+            <p class="back h">INSTITUTION OF NATIONAL IMPORTANCE</p>
+            <br><br>
+
+
+            <br><br><br>
+
+
+            <h2>NIT KURUKSHETRA LOCATION </h2>
+
+        </div>
+
+    </section>
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.105775027993!2d76.81328431511284!3d29.947635981917678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e3f51801954b5%3A0x14d79f026b1ae4ec!2sNational%20Institute%20of%20Technology%2C%20Kurukshetra!5e0!3m2!1sen!2sin!4v1623985460455!5m2!1sen!2sin"></iframe>
+    </section>
+
+    <footer>
+        <p class="footer">Copyright &copy; 2025 - All rights reserved.</p>
+    </footer>
+
+    <!--Javascript for menu-->
+    <script>
+        var Navlinks = document.getElementById("Navlinks")
+
+        function showmenu() {
+            Navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            Navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
